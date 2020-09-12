@@ -1,5 +1,5 @@
 name: SaberCore
-version: ${project.version}
+version: ${pom.version}
 main: me.driftay.score.SaberCore
 author: Driftay
 softdepend:
