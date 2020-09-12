@@ -1,6 +1,6 @@
 name: FactionsCore
 version: ${pom.version}
-main: me.driftay.score.SaberCore
+main: me.burnet.fcore.FactionCore
 author: BurnetPv
 softdepend:
   - Factions
@@ -59,7 +59,7 @@ permissions:
   sabercore.staff:
     description: Allows players to use general staff commands in sabercore
   sabercore.reload:
-    description: Allows access to reload SaberCore
+    description: Allows access to reload FactionCore
   sabercore.disabledcommands.bypass:
     description: Allows players to execute commands that are in the disabled commands list
   sabercore.spawnermine.bypass:
