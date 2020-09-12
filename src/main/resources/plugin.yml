@@ -1,7 +1,7 @@
-name: SaberCore
+name: FactionsCore
 version: ${pom.version}
 main: me.driftay.score.SaberCore
-author: Driftay
+author: BurnetPv
 softdepend:
   - Factions
   - HolographicDisplays
