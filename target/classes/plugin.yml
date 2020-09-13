@@ -1,7 +1,7 @@
-name: SaberCore
-version: ${project.version}
-main: me.driftay.score.SaberCore
-author: Driftay
+name: FactionsCore
+version: ${pom.version}
+main: me.burnet.fcore.FactionCore
+author: BurnetPv
 softdepend:
   - Factions
   - HolographicDisplays
@@ -53,13 +53,15 @@ commands:
     description: base command for opening anvil
   recycle:
     description: base command for recycling bottles
+  sotw:
+    description: base command for starting the world grace period.
 permissions:
   sabercore.giveall:
     description: Allows players to execute /giveall
   sabercore.staff:
     description: Allows players to use general staff commands in sabercore
   sabercore.reload:
-    description: Allows access to reload SaberCore
+    description: Allows access to reload FactionCore
   sabercore.disabledcommands.bypass:
     description: Allows players to execute commands that are in the disabled commands list
   sabercore.spawnermine.bypass:
@@ -82,3 +84,5 @@ permissions:
     description: Allows access to /nv
   sabercore.recycle:
     description: Allows access to /recycle
+  factioncore.sotw:
+    description: Allows access to /sotw

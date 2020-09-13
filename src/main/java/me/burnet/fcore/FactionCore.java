@@ -120,10 +120,12 @@ public final class FactionCore extends JavaPlugin {
         getCommand("slowchat").setExecutor(new CmdSlowChat());
         getCommand("giveall").setExecutor(new CmdGiveAll());
         getCommand("stackpots").setExecutor(new CmdStackPotions());
+        getCommand("sotw").setExecutor(new CmdSOTW());
     }
 
 
     private void registerBooleans() {
+        getServer().getPluginManager().registerEvents(new CmdSOTW(), this);
         getServer().getPluginManager().registerEvents(new WandHandler(), this);
         getServer().getPluginManager().registerEvents(new CmdStackPotions(), this);
 

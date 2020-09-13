@@ -53,6 +53,8 @@ commands:
     description: base command for opening anvil
   recycle:
     description: base command for recycling bottles
+  sotw:
+    description: base command for starting the world grace period.
 permissions:
   sabercore.giveall:
     description: Allows players to execute /giveall
@@ -82,3 +84,5 @@ permissions:
     description: Allows access to /nv
   sabercore.recycle:
     description: Allows access to /recycle
+  factioncore.sotw:
+    description: Allows access to /sotw

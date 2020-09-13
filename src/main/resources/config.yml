@@ -20,6 +20,7 @@
 # +------------------------------------------------------+ #
 ############################################################
 useAntiZombieBaby: true #Denies baby Zombies & baby Zombie Pigmen from spawning
+allow-explosions: true
 reduceIronGolemHealth: true
 denyIronGolemsTargetZombies: true #Denies Iron Golems Targeting on Zombies
 ironGolemHealth: 5.0 #5.0 = 10 Hearts
