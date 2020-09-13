@@ -1,3 +1,3 @@
 # FactionsCore
 
-- FactionsCore forked from SaberCore and other repos.
+Simply a factions core made from completely nothing but dirt and a dream.
