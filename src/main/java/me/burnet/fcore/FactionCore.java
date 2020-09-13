@@ -128,6 +128,7 @@ public final class FactionCore extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new CmdSOTW(), this);
         getServer().getPluginManager().registerEvents(new WandHandler(), this);
         getServer().getPluginManager().registerEvents(new CmdStackPotions(), this);
+        getServer().getPluginManager().registerEvents(new AntiWeather(), this);
 
         if(getConfig().getBoolean("denyIronGolemsTargetZombies")){
             getServer().getPluginManager().registerEvents(new IronGolemAI(), this);
