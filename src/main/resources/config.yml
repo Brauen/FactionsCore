@@ -42,6 +42,9 @@ denyBlazeWaterDamage: true #Blazes will not take damage from water
 useBookDisenchant: true #Left clicking a enchantment table with a enchanted book will convert it back to its original form (HCF Style)
 useOreTracker: false #Adds a HCF Style ore tracker to pickaxes.
 useAntiRoofCannon: false # Removes all sand and tnt at y level 255 to prevent roof cannons.
+goldenAppleCooldown: 5 # Cooldown is registered in minutes.
+cdMessage: "&eCurrently on cooldown."
+expireMessage: "&eYou can now use a gapple again."
 ############################################################
 # +------------------------------------------------------+ #
 # |                    Chunkbusters                      | #

@@ -8,6 +8,8 @@ import me.burnet.fcore.cmds.handlers.HarvesterHoeListener;
 import me.burnet.fcore.cmds.handlers.ShockwaveListener;
 import me.burnet.fcore.cmds.handlers.WandHandler;
 import me.burnet.fcore.config.Persist;
+import me.burnet.fcore.cooldowns.EnderPearlCD;
+import me.burnet.fcore.cooldowns.GoldenAppleCD;
 import me.burnet.fcore.exempt.*;
 import me.burnet.fcore.exempt.mobs.*;
 import me.burnet.fcore.file.CustomFile;
@@ -39,6 +41,7 @@ public final class FactionCore extends JavaPlugin {
     public List<String> itemList = getConfig().getStringList("DeniedItemStorage.Items");
     private ChatHandler chatHandler;
     private RoofCannonTask roofCannonTask;
+    public static long cooldown;
 
 
     public static void log(String message) {
@@ -57,6 +60,7 @@ public final class FactionCore extends JavaPlugin {
 
     public void onEnable() {
         instance = this;
+        this.cooldown = 3000L;
         logger = this.getLogger();
         saveDefaultConfig();
         getConfig().options().copyDefaults(true);
@@ -129,6 +133,8 @@ public final class FactionCore extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new WandHandler(), this);
         getServer().getPluginManager().registerEvents(new CmdStackPotions(), this);
         getServer().getPluginManager().registerEvents(new AntiWeather(), this);
+        getServer().getPluginManager().registerEvents(new GoldenAppleCD(), this);
+        getServer().getPluginManager().registerEvents(new EnderPearlCD(), this);
 
         if(getConfig().getBoolean("denyIronGolemsTargetZombies")){
             getServer().getPluginManager().registerEvents(new IronGolemAI(), this);
