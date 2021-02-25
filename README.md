@@ -1,3 +1,3 @@
 # FactionsCore
 
-Simply a factions core made from completely nothing but dirt and a dream.
+A shitty fork of SaberCore that was made for VeracityMC by me. (HIGHLY DON'T RECOMMEND USING)
